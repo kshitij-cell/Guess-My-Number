@@ -33,7 +33,7 @@ h3 {
 
 h1 {
   text-align: center;
-  font-size: 60px;
+  font-size: 40px;
 }
 
 .img {
@@ -44,7 +44,7 @@ h1 {
   text-align: center;
   color: #111111;
   bottom: 0;
-  margin-left: 45%;
+  margin-left: 40%;
 }
 
 .container {
@@ -78,6 +78,7 @@ h1 {
   cursor: pointer;
   font-size: 30px;
   border-collapse: none;
+  text-align: center;
 }
 .btncheck {
   font-size: 25px;

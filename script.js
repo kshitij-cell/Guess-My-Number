@@ -19,11 +19,12 @@ function startagn(){
     document.querySelector('.put').value='';
     document.querySelector('body').style.backgroundColor='#222222';
     }
-document.querySelector('.btncheck').addEventListener('click',function(){
+
+const startGame=function(){
     const guess=Number(document.querySelector('.put').value);
     if(guess>high || guess<low)
     {
-     displayMessage(`Number not in the range`);
+     displayMessage(`Number not in the range. Must be between 1 and 20`);
      return;
     }
     if(!guess)
@@ -39,7 +40,7 @@ document.querySelector('.btncheck').addEventListener('click',function(){
         highscore=score;
         document.querySelector('.highscore').textContent=highscore;
         }
-        document.querySelector('body').style.backgroundColor='green';
+        document.querySelector('body').style.backgroundColor="green";
 
     }
 
@@ -57,7 +58,12 @@ document.querySelector('.btncheck').addEventListener('click',function(){
             displayStartScore(0);
     
         }
-    }
+    }    
+}
 
-    
-})
+document.querySelector('.btncheck').addEventListener('click',startGame);
+
+document.querySelector('.put').addEventListener('keydown', function (e){
+    if(e.key==="Enter")
+    startGame();
+} )
