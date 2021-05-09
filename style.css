@@ -71,23 +71,23 @@ h1 {
 
 .put {
   height: 100%;
-  width: 40%;
+  width: 50%;
   background-color: #eeeeee;
   margin: 5%;
   padding: 4%;
   cursor: pointer;
   font-size: 30px;
+  border-radius: 10px;
   border-collapse: none;
   text-align: center;
 }
 .btncheck {
   font-size: 25px;
-  margin: 1%;
+  margin: 4%;
   padding: 4%;
   background-color: #111111;
   font-family: "Press Start 2P", sans-serif;
   color: #eeeeee;
   border-radius: 10px;
-  border-collapse: collapse;
   cursor: pointer;
 }
