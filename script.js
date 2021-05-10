@@ -29,6 +29,7 @@ const startGame = function () {
     return;
   } else if (guess == hidden) {
     document.querySelector(".img").textContent = hidden;
+    document.querySelector(".header").innerHTML = `Match Found🥳`;
     displayMessage(`MATCH FOUND`);
     if (score > highscore) {
       highscore = score;
