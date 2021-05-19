@@ -13,6 +13,7 @@ const displayStartScore = function (number) {
 function startagn() {
   displayMessage(`Start Guessing Again!!!!!!`);
   document.querySelector(".img").textContent = `?`;
+  document.querySelector(".header").innerHTML = "Guess My Number !";
   displayStartScore(20);
   document.querySelector(".put").value = "";
   document.querySelector("body").style.backgroundColor = "#222222";
